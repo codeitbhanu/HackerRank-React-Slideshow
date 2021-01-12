@@ -24,6 +24,7 @@ function Slides({ slides }) {
             <div id="navigation" className="text-center">
                 <button
                     data-testid="button-restart"
+                    disabled={pos === 0}
                     className="small outlined"
                     onClick={() => btnRestartHandler(0)}
                 >
